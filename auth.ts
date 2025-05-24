@@ -55,7 +55,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   providers: [
     // Apple,
     // Atlassian,
-    Auth0,
+    // Auth0,
     // AzureB2C,
     // BankIDNorway,
     // BoxyHQSAML({
