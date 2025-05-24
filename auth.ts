@@ -38,6 +38,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     // Discord,
     // Dropbox,
     // Facebook,
+    
     // GitHub,
     // GitLab,
     Google,
