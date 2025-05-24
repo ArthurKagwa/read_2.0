@@ -11,8 +11,8 @@ import { UnstorageAdapter } from "@auth/unstorage-adapter"
 const storage = createStorage({
   driver: process.env.VERCEL
     ? vercelKVDriver({
-        url: process.env.AUTH_KV_REST_API_URL,
-        token: process.env.AUTH_KV_REST_API_TOKEN,
+        url: process.env.REST_API_URL,
+        token: process.env.REST_API_TOKEN,
         env: false,
       })
     : memoryDriver(),
@@ -38,7 +38,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     // Discord,
     // Dropbox,
     // Facebook,
-    
+
     // GitHub,
     // GitLab,
     Google,
